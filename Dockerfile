@@ -13,7 +13,7 @@ RUN apt-get update \
   clang \
   gcc \
   && cd /tmp \
-  && curl https://github.com/commercialhaskell/ghc/releases/download/ghc-8.0.2-release/ghc-8.0.2-x86_64-deb7-linux.tar.xz > ghc-8.0.2.tar.xz
+  && curl https://github.com/commercialhaskell/ghc/releases/download/ghc-8.0.2-release/ghc-8.0.2-x86_64-deb7-linux.tar.xz > ghc-8.0.2.tar.xz \
   && tar -xf "ghc-8.0.2.tar.xz" \
   && cd ghc-8.0.2 \
   && ./configure && /usr/bin/make install \
